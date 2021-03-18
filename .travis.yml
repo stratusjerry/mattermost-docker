@@ -7,7 +7,7 @@ before_install:
 
 install:
     - eval $BUILD
-    - sleep 30
+    - sleep 60
 
 env:
     - BUILD="mkdir -p ./volumes/app/mattermost/{data,logs,config,plugins} && docker-compose up -d"
